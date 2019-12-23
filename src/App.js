@@ -1,24 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Redirect } from "react-router-dom";
 import './App.css';
+import RouteC from './components/RouteC';
+import Dashboard from "./pages/Dashboard";
+import Accounts from "./pages/Account";
+import Projects from "./pages/Projects";
+import Billing from "./pages/Billing";
+import FAQ from "./pages/FAQ";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <RouteC path="/" exact render={<Redirect to="/projects" />}/>
+          <RouteC path="/dashboard" component={Dashboard} exact />
+          <RouteC path="/accounts" component={Accounts} exact />
+          <RouteC path="/projects" component={Projects} exact />
+          <RouteC path="/billing" component={Billing} exact />
+          <RouteC path="/faqs" component={FAQ} exact />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
