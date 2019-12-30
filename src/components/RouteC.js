@@ -4,12 +4,14 @@ import Nav from "./Nav";
 
 const RouteC = ({ component: Component, ...rest }) => {
   return(
-    <Route 
+    <Route
       {...rest}
       render={props => (
         <React.Fragment>
           <Nav {...props} />
-          <Component {...props} />
+          <div className="app-container">
+            <Component {...props} />
+          </div>
         </React.Fragment>
       )}
      />
