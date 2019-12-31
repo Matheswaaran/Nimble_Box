@@ -1,0 +1,27 @@
+{
+  "projects": {
+
+  },
+  "ai_news": [
+    {
+      "id": 1,
+      "news": "Tesla generates Lorem Ipsem with a K80 GPU",
+      "twitter_link": "https://twitter.com/matheswaaran_S"
+    },
+    {
+      "id": 2,
+      "news": "Some news article goes here as well",
+      "twitter_link": "https://twitter.com/matheswaaran_S"
+    },
+    {
+      "id": 3,
+      "news": "Another news piece by a magazine here",
+      "twitter_link": "https://twitter.com/matheswaaran_S"
+    },
+    {
+      "id": 4,
+      "news": "Do you know how much wood would a woodchuck?",
+      "twitter_link": "https://twitter.com/matheswaaran_S"
+    }
+  ]
+}

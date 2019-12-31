@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectCard from "../components/Cards/ProjectCard";
 import NewProjectCard from "../components/Cards/NewProjectCard";
+import AiNews from "../components/AiNews";
 
 const Projects = () => {
   return (
@@ -21,7 +22,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="col-md-3">
-        asdf
+        <AiNews/>
       </div>
     </div>
   )
